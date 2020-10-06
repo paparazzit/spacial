@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+:root {
+  --red: #f32853;
+  --primaryGray: #f6f6f6;
+  --primaryBack: #b8e2f2;
+  --fontColor: #484848; /*rgb(50, 48, 55)*/
+  --transition: 0.3s ease;
+  --fontSize: 16px;
+  --secundaryGray: #aaaaaa;
+  --deepGray: #323037;
+  --white: #f0f0f0;
+  --fontGray: #aaaaaa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 20px 35px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.btn-pink {
+  background: var(--red);
+  color: var(--white);
+  margin-bottom: 330px;
+}
+.btn-dark {
+  background: var(--deepGray);
+  color: var(--white);
+  margin-bottom: 330px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--fontSize);
+}
+
+/* Header */
+header {
+  background: linear-gradient(rgb(50, 48, 55, 0.6), rgb(50, 48, 55, 0.9)),
+    url(img/banner.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  /* height: 90vh; */
+}
+
+header nav {
+  padding: 60px 50px;
+}
+header nav .logo a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 500;
+  float: left;
+}
+header nav .logo a:hover {
+  color: white;
+  transition: var(--transition);
+}
+
+header nav .logo span {
+  font-weight: 600;
+}
+header nav ul {
+  list-style: none;
+  float: right;
+}
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  padding-right: 50px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.container::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* Banner */
+.banner {
+  text-align: center;
+}
+header .banner h1,
+header .banner h4,
+header .banner a {
+  text-transform: uppercase;
+}
+.banner h1 {
+  font-size: 4rem;
+  padding: 100px 0 40px 0;
+  color: var(--white);
+}
+.banner h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--fontGray);
+  padding-bottom: 40px;
+}
+
+/* intro */
+.intro {
+  padding: 100px 0;
+}
+.intro article {
+  width: 50%;
+  float: left;
+}
+
+.intro article:first-child {
+  text-transform: uppercase;
+  /* padding-left: 50px; */
+}
+.intro article :last-child {
+  /* padding-right: 50px; */
+}
+.intro article h2 {
+  font-size: 2.5rem;
+  color: var(--fontColor);
+  line-height: 1.5;
+}
+.intro article h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--fontGray);
+  line-height: 1.5;
+}
+
+.intro article p {
+  line-height: 1.7;
+  color: var(--fontColor);
+}
+/* Blog */
+section.blog {
+  background-color: var(--primaryGray);
+  padding: 0 15%;
+}
+.blog .headings {
+  text-align: center;
+  padding: 100px 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.headings h2 {
+  font-size: 2.9rem;
+  color: var(--fontColor);
+}
+.headings h4 {
+  color: var(--fontGray);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.blog article {
+  width: 48%;
+  float: left;
+  text-align: right;
+}
+.blog article:last-child {
+  float: right;
+  text-align: left;
+}
+
+.blog article img {
+  width: 100%;
+}
+
+.blog::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.blog article .wrapper {
+  text-align-last: center;
+  background-color: white;
+}
+article .wrapper h3 {
+  padding: 40px 0;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+article .wrapper .btn {
+  background: ;
+}
+
+/* services */
+
+.services .headings {
+  line-height: 2;
+}
+
+/* team */
+
+.team .row article {
+  width: 48%;
+  float: left;
+}
+.team .row article .text {
+  width: 65%;
+  float: left;
+}
+.team .row article img {
+  width: 35%;
+  float: right;
+}
