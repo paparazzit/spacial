@@ -212,12 +212,23 @@ article .wrapper .btn {
 .team .row article {
   width: 48%;
   float: left;
+  margin-bottom: 40px;
 }
 .team .row article .text {
   width: 65%;
   float: left;
+  padding: 30px;
 }
 .team .row article img {
   width: 35%;
+  float: right;
+  border-radius: 50%;
+  border: 10px solid var(--fontGray);
+}
+
+.team article:nth-child(odd) {
+  float: right;
+}
+.team article:nth-child(odd) .text {
   float: right;
 }
